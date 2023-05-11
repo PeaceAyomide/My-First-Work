@@ -1,0 +1,251 @@
+/*---The Whole Body---*/
+* {
+  margin: 0pix 5px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* body {
+  background-color: #1D1B1B;
+}
+/*---The End of Whole Body---*/
+
+
+
+
+
+
+/*---The Responsive Whole Body---*/
+.container {
+  height: 100vh;
+}
+
+/*---The End Responsive Whole Body---*/
+
+
+
+
+
+/*---Start Main---*/
+.main {
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  font-family: sans-serif;
+}
+.main__image {
+  background-image: url("./images/Mypicture.jpg");
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.main__text {
+  color: #EC4D37;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__text-1 {
+  font-size: 10vw;
+}
+.main__text-2, .main__text-3, .main__text-4 {
+  font-size: 5vw;
+}
+
+.bright{
+  color: yellow;
+  text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 70px yellow, 0 0 80px yellow, 0 0 100px yellow, 0 0 150px yellow;
+}
+
+.glow{
+  color: red;
+			text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+}
+.shine{
+  font-size: 40px;
+  color: #7e57c2;
+  text-shadow: 0 0 10px #7e57c2, 0 0 20px #7e57c2, 0 0 30px #7e57c2, 0 0 40px #7e57c2, 0 0 70px #7e57c2, 0 0 80px #7e57c2, 0 0 100px #7e57c2, 0 0 150px #7e57c2;
+}
+.twitter {
+  color: rgb(92, 158, 92);
+  text-shadow: 0 0 10px rgb(92, 158, 92), 0 0 20px rgb(92, 158, 92), 0 0 30px rgb(92, 158, 92);  
+}
+
+
+
+/*---End Main---*/
+
+
+
+
+/*---Start Footer---*/
+.footer {
+  color: #EC4D37;
+  height: 10%;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+  margin-right: 19%;
+}
+.footer [class^=fa-brands] {
+  width: 5.3vw;
+  color: #EC4D37;
+}
+.footer .fa-brands:hover {
+  color: white;
+  transform: scale(1.2);
+}
+/*---End Foooter---*/
+
+
+
+
+/* Responsive, Works Well Especially for Mobiles */
+@media (max-width: 650px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: 100%;
+    background-position: center;
+  }
+  .main__text {
+    width: 100%;
+  }
+  .main__text-1 {
+    display: none;
+  }
+  .main__text-2, .main__text-3, .main__text-4 {
+    font-size: 19px;
+  }
+  .footer {
+    font-size: 15vw;
+    justify-content: center;
+    margin: 0px;
+  }
+  .footer [class^=fa-brands] {
+    width: 45px;
+    height: 45px;
+  }
+}/*# sourceMappingURL=PEACE.css.map */
+
+
+
+/*SPECIAL CASE*/
+ 
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #EC4D37;
+  
+}
+
+.brand-title{
+  font-size: 4.5rem;
+  margin: .5rem;
+}
+
+.navbar-link ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-link li{
+  list-style: none;
+}
+
+.navbar-link li a{
+  text-decoration: none;
+  color: #EC4D37;
+  padding: 1rem;
+  display: block;
+  font-size: 2.4rem;
+  
+}
+
+.navbar-link li a:hover{
+  color: white;
+  transition: .4s;
+}
+
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  
+}
+
+.toggle-button .bar{
+height: 3px;
+width: 100%;
+background-color: #EC4D37;
+border-radius: 10px;
+}
+
+/* END OF SPECIAL CASE*/
+
+
+
+/* FOR SPECIAL CASE RESPONSIVE MOBILE SCREEN*/
+@media (max-width: 650px){
+  .toggle-button{
+    display: flex;
+    
+  }
+  
+.navbar-link{
+  display: none;
+  width: 100%;
+  
+}  
+
+.navbar{
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.navbar-link ul {
+  width: 100%;
+  flex-direction: column;
+  background-color: #292727;
+  
+}
+
+.navbar-link li{
+  text-align: center;
+}
+
+.navbar-link li a{
+  padding: 5rem 1rem;
+  
+}
+
+.navbar-link.active{
+  display: flex;
+  
+}
+
+.brand-title{
+  font-size: 4rem;
+  margin: 0rem 2rem;
+}
+
+}
+/* END FOR SPECIAL CASE RESPONSIVE MOBILE SCREEN*/
